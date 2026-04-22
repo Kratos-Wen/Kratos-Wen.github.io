@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:4.0
+KIND:individual
+N:Wen;Di;;;
+FN:Di Wen
+TITLE:Ph.D. Student
+ORG:Karlsruhe Institute of Technology;CV:HCI Lab
+EMAIL;TYPE=work:di.wen@kit.edu
+ADR;TYPE=work:;;;;Karlsruhe;;Germany
+URL;TYPE=work:https://diwen.ai/
+URL:https://scholar.google.com/citations?user=aqGMqEcAAAAJ
+URL:https://orcid.org/0009-0000-1693-7912
+URL:https://github.com/Kratos-Wen
+URL:https://www.linkedin.com/in/diwen96/
+NOTE:Human-centric computer vision; fine-grained action understanding; human-object interaction; robust learning under imperfect supervision and domain shifts.
+END:VCARD

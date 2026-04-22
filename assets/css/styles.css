@@ -382,6 +382,28 @@ h3 {
   gap: 1rem;
 }
 
+.heading-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.55rem;
+}
+
+.section-note {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.panel-actions {
+  padding: 0 1.1rem 1.1rem;
+}
+
+.panel-link {
+  width: 100%;
+  justify-content: center;
+}
+
 .news-section {
   padding-top: 24px;
 }
@@ -802,6 +824,10 @@ body.modal-open {
   .section-heading.with-action {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .heading-actions {
+    justify-content: flex-start;
   }
 
   .news-list li,
