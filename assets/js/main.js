@@ -189,13 +189,14 @@ const citations = {
   archivePrefix={arXiv}
 }`,
   },
-  mica2025: {
+  mica2026: {
     citation:
-      "D. Wen, K. Peng, J. Zheng, Y. Chen, Y. Shi, J. Wei, R. Liu, K. Yang, and R. Stiefelhagen. MICA: Multi-Agent Industrial Coordination Assistant. arXiv preprint arXiv:2509.15237, 2025.",
-    bibtex: `@misc{wen2025mica,
+      "D. Wen, K. Peng, J. Zheng, Y. Chen, Y. Shi, J. Wei, R. Liu, K. Yang, and R. Stiefelhagen. MICA: Multi-Agent Industrial Coordination Assistant. IEEE International Conference on Robotics and Automation, 2026.",
+    bibtex: `@inproceedings{wen2026mica,
   title={MICA: Multi-Agent Industrial Coordination Assistant},
   author={Wen, D. and Peng, K. and Zheng, J. and Chen, Y. and Shi, Y. and Wei, J. and Liu, R. and Yang, K. and Stiefelhagen, R.},
-  year={2025},
+  booktitle={IEEE International Conference on Robotics and Automation},
+  year={2026},
   eprint={2509.15237},
   archivePrefix={arXiv}
 }`,
@@ -234,13 +235,14 @@ const citations = {
   archivePrefix={arXiv}
 }`,
   },
-  microg2025: {
+  microg2026: {
     citation:
-      "D. Wen, L. Qi, K. Peng, K. Yang, F. Teng, A. Luo, J. Fu, Y. Chen, R. Liu, Y. Shi, et al. Go Beyond Earth: Understanding Human Actions and Scenes in Microgravity Environments. arXiv preprint arXiv:2506.02845, 2025.",
-    bibtex: `@misc{wen2025gobeyondearth,
+      "D. Wen, L. Qi, K. Peng, K. Yang, F. Teng, A. Luo, J. Fu, Y. Chen, R. Liu, Y. Shi, et al. Go Beyond Earth: Understanding Human Actions and Scenes in Microgravity Environments. International Conference on Learning Representations, 2026.",
+    bibtex: `@inproceedings{wen2026gobeyondearth,
   title={Go Beyond Earth: Understanding Human Actions and Scenes in Microgravity Environments},
   author={Wen, D. and Qi, L. and Peng, K. and Yang, K. and Teng, F. and Luo, A. and Fu, J. and Chen, Y. and Liu, R. and Shi, Y. and others},
-  year={2025},
+  booktitle={International Conference on Learning Representations},
+  year={2026},
   eprint={2506.02845},
   archivePrefix={arXiv}
 }`,
