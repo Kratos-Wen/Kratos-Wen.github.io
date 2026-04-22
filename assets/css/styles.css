@@ -11,8 +11,7 @@
   --shadow: 0 16px 40px rgba(23, 33, 31, 0.08);
   --radius: 8px;
   color-scheme: light;
-  font-family:
-    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -29,6 +28,7 @@ body {
   color: var(--text);
   font-size: 16px;
   line-height: 1.65;
+  overflow-x: hidden;
 }
 
 a {
@@ -131,6 +131,11 @@ img {
   padding-bottom: 48px;
 }
 
+.hero-copy,
+.profile-panel {
+  min-width: 0;
+}
+
 .eyebrow {
   margin: 0 0 0.5rem;
   color: var(--accent-dark);
@@ -169,16 +174,20 @@ h3 {
 }
 
 .lead {
+  width: 100%;
   max-width: 760px;
   margin-bottom: 1rem;
   color: var(--text);
   font-size: clamp(1.18rem, 2.2vw, 1.45rem);
   line-height: 1.45;
+  overflow-wrap: break-word;
 }
 
 .bio {
+  width: 100%;
   max-width: 740px;
   color: var(--muted);
+  overflow-wrap: break-word;
 }
 
 .link-row {
@@ -188,7 +197,21 @@ h3 {
   margin-top: 1.35rem;
 }
 
+.profile-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+  gap: 0.55rem;
+  width: 100%;
+  max-width: 760px;
+  margin-top: 1.35rem;
+}
+
+.contact-links {
+  max-width: 820px;
+}
+
 .link-row a,
+.profile-links a,
 .paper-links a,
 .paper-links button,
 .text-link {
@@ -206,7 +229,19 @@ h3 {
   font-family: inherit;
 }
 
+.profile-links a {
+  justify-content: flex-start;
+  min-width: 0;
+}
+
+.profile-links a span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .link-row a:hover,
+.profile-links a:hover,
 .paper-links a:hover,
 .paper-links button:hover,
 .text-link:hover {
@@ -237,6 +272,16 @@ h3 {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 1.8;
+}
+
+.text-icon {
+  border: 1.6px solid currentColor;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.56rem;
+  font-weight: 850;
+  letter-spacing: 0;
+  line-height: 1;
 }
 
 .linkedin-icon {
@@ -310,6 +355,17 @@ h3 {
 .quick-facts dd {
   margin: 0;
   color: var(--text);
+}
+
+.quick-facts a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.quick-facts a:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 
 .section-heading {
@@ -753,6 +809,10 @@ body.modal-open {
   .form-grid {
     grid-template-columns: 1fr;
     gap: 0.2rem;
+  }
+
+  .profile-links {
+    grid-template-columns: 1fr;
   }
 
   .form-grid {
