@@ -133,6 +133,8 @@ img {
 
 .hero-copy,
 .profile-panel {
+  width: 100%;
+  max-width: 100%;
   min-width: 0;
 }
 
@@ -175,6 +177,7 @@ h3 {
 
 .lead {
   width: 100%;
+  min-width: 0;
   max-width: 760px;
   margin-bottom: 1rem;
   color: var(--text);
@@ -185,6 +188,7 @@ h3 {
 
 .bio {
   width: 100%;
+  min-width: 0;
   max-width: 740px;
   color: var(--muted);
   overflow-wrap: break-word;
@@ -810,7 +814,8 @@ body.modal-open {
   .nav,
   .section,
   .site-footer {
-    width: min(100% - 24px, 1080px);
+    width: calc(100% - 24px);
+    max-width: 1080px;
   }
 
   .section {
@@ -819,6 +824,18 @@ body.modal-open {
 
   .hero {
     padding-top: 32px;
+  }
+
+  .lead {
+    max-width: 100%;
+    font-size: 1.12rem;
+    overflow-wrap: anywhere;
+  }
+
+  .bio {
+    max-width: 100%;
+    font-size: 0.98rem;
+    overflow-wrap: anywhere;
   }
 
   .section-heading.with-action {

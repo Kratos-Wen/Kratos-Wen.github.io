@@ -6,4 +6,5 @@ desktop.ini
 node_modules/
 *.log
 _private/
+photo.jpg
 CV/*.pdf
