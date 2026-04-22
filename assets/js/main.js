@@ -435,3 +435,32 @@ if (citeButtons.length) {
     }, 1600);
   });
 }
+
+const collaborationForm = document.querySelector("#collaboration-form");
+
+if (collaborationForm) {
+  collaborationForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(collaborationForm);
+    const name = String(formData.get("name") || "").trim();
+    const email = String(formData.get("email") || "").trim();
+    const affiliation = String(formData.get("affiliation") || "").trim();
+    const topic = String(formData.get("topic") || "Research collaboration").trim();
+    const message = String(formData.get("message") || "").trim();
+
+    const subject = `[Collaboration] ${topic}`;
+    const body = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Affiliation: ${affiliation}`,
+      `Inquiry type: ${topic}`,
+      "",
+      "Message:",
+      message,
+    ].join("\n");
+
+    window.location.href =
+      `mailto:di.wen@kit.edu?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+}

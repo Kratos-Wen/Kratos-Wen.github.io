@@ -8,4 +8,8 @@
     <loc>https://diwen.ai/publications.html</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://diwen.ai/collaborate.html</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
